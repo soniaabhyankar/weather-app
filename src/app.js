@@ -7,6 +7,8 @@ const forecast = require('./utils/forecast');
 //Start express app
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 // Load statis assets from public folder
 app.use(express.static(path.join(__dirname, '../public')));
 
@@ -61,6 +63,6 @@ app.get('*', (req, res) => {
 	});
 });
 
-app.listen(3000, () => {
-	console.log('Server running on port 3000');
+app.listen(port, () => {
+	console.log('Server running on port ' + port);
 });
