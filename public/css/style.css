@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+
+	color: #020726;
+	max-width: 50vw;
+	/* border: 2px solid red; */
+	margin: 0 auto;
+	padding: 0 16px;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	background: url('../images/bg2.jpg') no-repeat center right;
+	background-size: cover;
+}
+
+.main-content {
+	flex-grow: 1;
+}
+footer {
+	color: #414141;
+	margin-top: 20px;
+	padding: 16px 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+header {
+	margin-top: 16px;
+	margin-bottom: 50px;
+}
+h1 {
+	color: #020726;
+	font-size: 3.7rem;
+	margin-bottom: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 7px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+img {
+	width: 250px;
+	/* transform: rotate(-90deg); */
+}
+
+#search {
+	display: grid;
+	align-items: center;
+	/* border: 2px solid red; */
+}
+#search input {
+	font-size: 2rem;
+	color: #dddddd;
+	border: none;
+	border-bottom: 1px solid #020726;
+	margin: 110px auto;
+	padding: 10px;
+	text-align: center;
+	max-width: 30vw;
+	caret-color: #dddddd;
+	text-transform: capitalize;
+	background: transparent;
+	font-weight: 300;
+}
+#search input:focus {
+	outline: none;
+	border-width: 2.5px;
+	font-weight: 300;
+
+	/* box-shadow: 0 0 5px #0079b1; */
+}
+#search input::placeholder {
+	color: #dddddd;
+	font-weight: 300;
+}
+
+.error {
+	background: #d63c3c;
+	padding: 16px;
+	font-size: 1.2rem;
+	color: #f0f0f0;
+	text-align: center;
+}
+
+table {
+	border-spacing: 30px 30px;
+	/* border: 2px solid red; */
+	margin: 5px auto;
+	max-width: 60%;
+	visibility: hidden;
+}
+
+td:nth-child(even) {
+	font-size: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	color: #363636;
+	/* min-width: 250px; */
+}
+.icons {
+	width: 30px;
+	height: 30px;
+}
+
+.show {
+	visibility: visible;
+}
+
+.hide {
+	visibility: hidden;
+}

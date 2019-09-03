@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+	<title>Weather App | Home</title>
+	<link rel="icon" href="./images/favicon.png">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="main-content">
+		{{>header}}
+		{{!-- <p>Stay up-to-date with the weather forecast.</p> --}}
+
+		<form id="search" action="">
+			<input type="text" placeholder="Location?">
+			{{!-- <button>Search</button> --}}
+		</form>
+
+
+		<table>
+			<tr>
+				<td><img src="./images/location.svg" class="icons"></td>
+				<td id="location"></td>
+			</tr>
+			<tr>
+				<td><img src="./images/cloud.svg" class="icons"></td>
+				<td id="forecast"></td>
+			</tr>
+		</table>
+
+
+		{{!-- <p id="location" class="msg"></p> --}}
+
+		{{!-- <p id="forecast" class="msg"></p> --}}
+		<p id="error"></p>
+	</div>
+
+
+	{{>footer}}
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
