@@ -8,14 +8,18 @@ body {
 	max-width: 50vw;
 	/* border: 2px solid red; */
 	margin: 0 auto;
-	padding: 0 16px;
+	padding: 20px;
 	box-sizing: border-box;
 
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 
-	background: url('../images/bg2.jpg') no-repeat center right;
+	background: linear-gradient(
+			rgba(170, 170, 170, 0.39),
+			rgba(170, 170, 170, 0.39)
+		),
+		url('../images/bg2.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -25,42 +29,36 @@ body {
 footer {
 	color: #414141;
 	margin-top: 20px;
-	padding: 16px 0;
+	padding: 5px 0;
 	text-align: center;
 	font-weight: 400;
+	/* border: 2px solid red; */
 }
 
-header {
-	margin-top: 16px;
-	margin-bottom: 50px;
-}
 h1 {
 	color: #020726;
 	font-size: 3.7rem;
-	margin-bottom: 26px;
+	/* margin-bottom: 26px; */
 	text-align: center;
 	text-transform: uppercase;
 	word-spacing: 7px;
 	font-family: 'Open Sans', sans-serif;
 }
 
-img {
-	width: 250px;
-	/* transform: rotate(-90deg); */
-}
-
 #search {
 	display: grid;
 	align-items: center;
 	/* border: 2px solid red; */
+	margin-top: 200px;
 }
 #search input {
 	font-size: 2rem;
 	color: #dddddd;
 	border: none;
 	border-bottom: 1px solid #020726;
-	margin: 110px auto;
-	padding: 10px;
+	/* margin: 110px auto; */
+	/* padding: 10px; */
+	margin: 0 auto;
 	text-align: center;
 	max-width: 30vw;
 	caret-color: #dddddd;
@@ -91,8 +89,8 @@ img {
 table {
 	border-spacing: 30px 30px;
 	/* border: 2px solid red; */
-	margin: 5px auto;
-	max-width: 60%;
+	margin: 100px auto;
+	max-width: 100%;
 	visibility: hidden;
 }
 
@@ -113,4 +111,34 @@ td:nth-child(even) {
 
 .hide {
 	visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		max-width: 100vw;
+	}
+	header {
+		/* border: 2px solid blue; */
+		margin-bottom: 20px;
+	}
+	header h1 {
+		font-size: 2.5rem;
+		/* margin: 20px auto; */
+		/* border: 2px solid red; */
+	}
+	#search input {
+		/* border: 2px solid yellow; */
+		font-size: 1.8rem;
+		max-width: 40vw;
+	}
+	table {
+		/* border: 2px solid green; */
+		max-width: 100%;
+	}
+	td:nth-child(even) {
+		font-size: 1.3rem;
+	}
+	footer {
+		font-size: 1rem;
+	}
 }
